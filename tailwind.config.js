@@ -10,7 +10,7 @@ export default {
                 'brand-navy': '#093344', // Custom dark teal/navy
                 'brand-blue': '#1E40AF', // Blue 800
                 'brand-teal': '#0D9488', // Teal 600 - More grounded than Sky
-                'brand-gold': '#F59E0B',
+                'brand-gold': '#df8d31', // User requested accent
                 'brand-light': '#FDFBF7', // Cloud/Cream White
                 'brand-dark': '#093344', // Custom dark teal/navy
                 'text-primary': '#093344', // Custom dark teal/navy

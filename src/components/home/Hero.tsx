@@ -15,23 +15,23 @@ const Hero = () => {
                     <div className="w-full lg:w-1/2 flex flex-col items-start text-left fade-in-up">
                         {/* Decorative Asset Removed */}
 
-                        <h1 className="font-display text-6xl md:text-7xl lg:text-8xl font-bold mb-8 leading-[1] tracking-tight text-brand-navy">
-                            Discover the <br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-brand-teal">Unknown.</span>
+                        <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-[1.1] tracking-tight text-brand-navy">
+                            Empowering Youth Through
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-brand-gold"> Research & Innovation</span>
                         </h1>
 
-                        <p className="text-text-secondary text-xl md:text-2xl mb-12 font-light max-w-lg leading-relaxed text-balance">
-                            Empowering the next generation of Tanzanian innovators to solve global challenges through local research.
+                        <p className="text-text-secondary text-lg md:text-xl mb-10 font-light max-w-lg leading-relaxed text-balance">
+                            Join a community of young researchers and innovators solving global challenges through local insights and collaboration.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-5 w-full sm:w-auto">
                             <Link to="/register" className="bg-brand-navy text-white px-8 py-4 rounded-full text-lg font-semibold transition-all shadow-xl shadow-brand-navy/20 hover:shadow-brand-blue/30 hover:scale-105 hover:bg-brand-blue flex items-center justify-center gap-2">
-                                Join the Research
+                                Join YRIF
                             </Link>
-                            <Link to="/about" className="group px-8 py-4 rounded-full text-lg font-semibold border-2 border-brand-navy/10 hover:border-brand-navy/30 text-brand-navy transition-all flex items-center justify-center gap-2 bg-white/50 backdrop-blur-sm">
-                                Learn More
+                            <a href="#research" className="group px-8 py-4 rounded-full text-lg font-semibold border-2 border-brand-navy/10 hover:border-brand-navy/30 text-brand-navy transition-all flex items-center justify-center gap-2 bg-white/50 backdrop-blur-sm">
+                                Explore Research
                                 <span className="group-hover:translate-x-1 transition-transform">→</span>
-                            </Link>
+                            </a>
                         </div>
                     </div>
 

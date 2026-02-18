@@ -15,7 +15,7 @@ const Partners = () => {
     ];
 
     return (
-        <section className="py-16 bg-gradient-to-b from-brand-light via-white to-white border-b border-gray-100 overflow-hidden">
+        <section id="partners" className="py-16 bg-gradient-to-b from-brand-light via-white to-white border-b border-gray-100 overflow-hidden">
             <div className="container mx-auto px-4 text-center mb-8">
                 <p className="text-sm font-semibold text-gray-400 uppercase tracking-wider">Trusted by Leading Institutions</p>
             </div>

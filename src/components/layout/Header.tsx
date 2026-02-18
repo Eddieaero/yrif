@@ -25,11 +25,13 @@ const Header = () => {
                     {/* Desktop Navigation */}
                     <nav className="hidden md:flex items-center space-x-1">
                         {[
-                            { name: 'Home', href: '#home' },
+                            { name: 'Home', href: '/' },
                             { name: 'About', href: '#about' },
-                            { name: 'Features', href: '#features' },
-                            { name: 'Events', href: '/dashboard' },
-                            { name: 'Resources', href: '/dashboard' }
+                            { name: 'Programs', href: '#features' },
+                            { name: 'Research', href: '#research' },
+                            { name: 'Events', href: '#events' },
+                            { name: 'Partners', href: '#partners' },
+                            { name: 'Contact', href: '#contact' }
                         ].map((item) => (
                             <a
                                 key={item.name}
@@ -44,7 +46,7 @@ const Header = () => {
                                 className="px-4 py-2 text-sm font-medium text-text-primary hover:text-brand-blue relative group transition-colors"
                             >
                                 {item.name}
-                                <span className="absolute bottom-1 left-4 right-4 h-0.5 bg-brand-blue scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center opacity-70"></span>
+                                <span className="absolute bottom-1 left-4 right-4 h-0.5 bg-brand-gold scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center opacity-70"></span>
                             </a>
                         ))}
                     </nav>
@@ -57,7 +59,7 @@ const Header = () => {
                         </button>
                         <Link to="/login" className="px-5 py-2.5 text-sm font-semibold text-brand-navy hover:text-brand-blue transition-colors">Login</Link>
                         <Link to="/register" className="bg-brand-navy hover:bg-brand-blue text-white px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 shadow-lg shadow-brand-navy/20 hover:shadow-brand-blue/30 transform hover:-translate-y-0.5">
-                            Get Started
+                            Join YRIF
                         </Link>
                     </div>
 
@@ -72,10 +74,13 @@ const Header = () => {
                     <div className="md:hidden mt-4 bg-white/90 backdrop-blur-xl rounded-2xl p-6 shadow-2xl border border-white/20 animate-fade-in-down">
                         <div className="flex flex-col space-y-4">
                             {[
-                                { name: 'Home', href: '#home' },
+                                { name: 'Home', href: '/' },
                                 { name: 'About', href: '#about' },
-                                { name: 'Features', href: '#features' },
-                                { name: 'Events', href: '/dashboard' },
+                                { name: 'Programs', href: '#features' },
+                                { name: 'Research', href: '#research' },
+                                { name: 'Events', href: '#events' },
+                                { name: 'Partners', href: '#partners' },
+                                { name: 'Contact', href: '#contact' },
                                 { name: 'Login', href: '/login' }
                             ].map((item) => (
                                 item.href.startsWith('#') ? (
@@ -104,7 +109,7 @@ const Header = () => {
                                 )
                             ))}
                             <Link to="/register" className="bg-brand-navy text-white px-6 py-3 rounded-xl text-center font-bold shadow-lg" onClick={() => setIsMenuOpen(false)}>
-                                Get Started
+                                Join YRIF
                             </Link>
                         </div>
                     </div>

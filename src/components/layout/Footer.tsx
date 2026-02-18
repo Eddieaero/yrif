@@ -3,7 +3,7 @@ import logo from '../../assets/images/logo_dark.png'; // Note: You might want a 
 
 const Footer = () => {
     return (
-        <footer className="bg-brand-navy text-white pt-20 pb-10">
+        <footer id="contact" className="bg-brand-navy text-white pt-20 pb-10">
             <div className="container mx-auto px-4">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
                     {/* Brand Column */}
@@ -18,6 +18,21 @@ const Footer = () => {
                             <a href="#" className="hover:text-brand-teal transition-colors"><Twitter size={20} /></a>
                             <a href="#" className="hover:text-brand-teal transition-colors"><Linkedin size={20} /></a>
                             <a href="#" className="hover:text-brand-teal transition-colors"><Instagram size={20} /></a>
+                        </div>
+
+                        {/* Newsletter */}
+                        <div className="mt-8">
+                            <h5 className="text-white font-bold mb-3 text-sm uppercas tracking-wide">Subscribe to our Newsletter</h5>
+                            <div className="flex">
+                                <input
+                                    type="email"
+                                    placeholder="Enter your email"
+                                    className="bg-white/10 border border-white/20 text-white px-4 py-2 rounded-l-lg text-sm focus:outline-none focus:border-brand-teal w-full"
+                                />
+                                <button className="bg-brand-teal text-brand-navy px-4 py-2 rounded-r-lg font-bold text-sm hover:bg-white transition-colors">
+                                    Subscribe
+                                </button>
+                            </div>
                         </div>
                     </div>
 
